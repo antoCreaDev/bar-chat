@@ -37,6 +37,7 @@ span {
 #centre img {
   margin: -30px;
   animation: arrow-b 0.35s ease infinite alternate;
+  z-index :1;
 }
 main {
   display: flex;
