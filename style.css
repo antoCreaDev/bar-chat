@@ -62,7 +62,9 @@ main {
 #photos {
   display: flex;
   gap: 5%;
-  justify-content: space-between;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 #photos img {
   width: 21%;
@@ -98,18 +100,18 @@ input:hover {
 }
 footer {
   width: 100%;
-  height: 35vh;
+  height: 265px;
 }
 #carre-rouge {
   display: flex;
   position: relative;
-  bottom: 1vh;
+  bottom: 2vh;
   z-index: 1;
 
   color: white;
   font-weight: bolder;
   text-align: left;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 #carre-rouge div {
@@ -141,13 +143,13 @@ a {
   #carre-rouge div {
     height: 5vh;
   }
-}
-#carre-rouge {
-  bottom: 0vh;
-}
-#texte {
-  bottom: 0px;
-}
-footer {
-  height: 55vh;
+  #carre-rouge {
+    bottom: 1vh;
+  }
+  #texte {
+    bottom: 0px;
+  }
+  footer {
+    height: 55vh;
+  }
 }
