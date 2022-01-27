@@ -28,16 +28,15 @@ header {
 span {
   background-color: #0d97b0;
 }
-#centre {
-  align-self: center;
-  flex-grow: 0.6;
+a {
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
 }
-#centre img {
+img {
   margin: -30px;
+}
+#arrow-b {
   animation: arrow-b 0.35s ease infinite alternate;
-  z-index :1;
 }
 main {
   display: flex;
@@ -100,7 +99,7 @@ footer {
 #carre-rouge {
   display: flex;
   position: relative;
-  bottom: 3vh;
+  bottom: 1vh;
   z-index: 1;
 
   color: white;
@@ -126,13 +125,22 @@ footer {
   }
 }
 p {
-  font-size: 90%;
+  font-size: 2vh;
+}
+a {
+  z-index: 5;
 }
 @media (orientation: portrait) {
   p {
-    font-size: 60%;
+    font-size: 1.1vh;
   }
   #carre-rouge div {
     height: 5vh;
   }
+}
+#carre-rouge {
+  bottom: 0vh;
+}
+#texte {
+  bottom: 0px;
 }
