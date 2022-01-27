@@ -1,0 +1,137 @@
+* {
+  box-sizing: content-box;
+}
+body,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/chat-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+#titre {
+  align-self: flex-start;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  margin: 30px;
+  color: white;
+  font-size: 1.5rem;
+}
+span {
+  background-color: #0d97b0;
+}
+#centre {
+  align-self: center;
+  flex-grow: 0.6;
+  display: flex;
+  align-items: flex-end;
+}
+#centre img {
+  margin: -30px;
+  animation: arrow-b 0.35s ease infinite alternate;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+#barre {
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#barre span {
+  background-color: white;
+}
+#photos {
+  display: flex;
+  gap: 5%;
+  justify-content: space-between;
+}
+#photos img {
+  width: 21%;
+  z-index: 1;
+}
+#texte {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  text-align: center;
+  position: relative;
+  bottom: 25px;
+}
+input {
+  border: 3px solid #e9ba35;
+  background-color: white;
+  margin-top: 60px;
+  color: #e9ba35;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: box-shadow 500ms ease-out 100ms;
+}
+input:hover {
+  -webkit-box-shadow: 11px 4px 33px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: 11px 4px 33px 5px rgba(0, 0, 0, 0.7);
+}
+#btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  width: 100%;
+  height: 20vh;
+}
+#carre-rouge {
+  display: flex;
+  position: relative;
+  bottom: 3vh;
+  z-index: 1;
+
+  color: white;
+  font-weight: bolder;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+}
+#carre-rouge div {
+  background-color: red;
+  display: flex;
+  width: 10vw;
+  height: 7vh;
+  text-align: center;
+  justify-content: center;
+}
+@keyframes arrow-b {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+p {
+  font-size: 90%;
+}
+@media (orientation: portrait) {
+  p {
+    font-size: 60%;
+  }
+  #carre-rouge div {
+    height: 5vh;
+  }
+}
